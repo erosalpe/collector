@@ -6,3 +6,22 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+.binderDimensions{
+    --gap: 1.5rem;
+    --columns: 3;
+    flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+}
+
+.binderImage{
+    width: 250px;
+    height: 350px;
+}
+
+.binderImage > img{
+    object-fit: cover;
+}
+
+.txtDecorationNone{
+    text-decoration: none;
+}

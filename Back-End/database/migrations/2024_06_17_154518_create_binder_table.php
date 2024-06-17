@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('binder', function (Blueprint $table) {
+        Schema::create('binders', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->integer('color')->nullable();
