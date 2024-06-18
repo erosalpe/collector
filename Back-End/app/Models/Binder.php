@@ -12,7 +12,7 @@ class Binder extends Model
     protected $fillable = [
         'user_id',
         'name',
-        'binder_color',
+        'color',
     ];
 
     public function user()

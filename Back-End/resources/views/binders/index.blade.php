@@ -29,13 +29,13 @@
                                 break;
                         }
                     @endphp
-                    <a href="{{ route('binders.index') }}" class="txtDecorationNone text-dark">
+                    <a href="{{ route('binders.show', ['binder' => $binder->id]) }}" class="txtDecorationNone text-dark">
                         <img src="{{ asset('images/' . $imagePath) }}" alt="{{ $binder->name }}" class="binderImage">
                         <h3 class="text-center pt-3">{{$binder->name}}</h3>
                     </a>
                 </div>
             @endforeach
-            <a href="{{ route('binders.index') }}" class="txtDecorationNone text-dark">
+            <a href="{{ route('binders.create') }}" class="txtDecorationNone text-dark">
                 <div class="binderDimensions d-flex align-items-center justify-content-center addBinder">
                     <span class="addButton">+</span>
                 </div>

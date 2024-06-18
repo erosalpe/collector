@@ -22,4 +22,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware(['auth'])->get('/binders', [BinderController::class, 'index'])->name('binders.index');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/binders', [BinderController::class, 'index'])->name('binders.index');
+    Route::get('/binders/create', [BinderController::class, 'create'])->name('binders.create');
+    Route::post('/binders', [BinderController::class, 'store'])->name('binders.store');
+    Route::get('/binders/{binder}', [BinderController::class, 'show'])->name('binders.show');
+});
+
