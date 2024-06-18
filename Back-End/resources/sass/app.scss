@@ -16,6 +16,12 @@
 .binderImage{
     width: 250px;
     height: 350px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.binderImage:hover{
+    transform: scale(1.3);
 }
 
 .binderImage > img{
@@ -24,4 +30,28 @@
 
 .txtDecorationNone{
     text-decoration: none;
+}
+
+.addButton{
+    font-size: 100px;
+    color: rgb(0, 0, 0, 0.8);
+    transition: transform 0.2s ease-in-out;
+}
+
+.addBinder{
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 250px;
+    height: 350px;
+    transition: transform 0.2s ease-in-out;
+    background-color: white;
+}
+
+.addBinder:hover{
+    transform: scale(1.3);
+}
+
+.addBinder:hover .addButton{
+    transform: scale(1.3);
+    color: rgb(0, 0, 0, 1);
 }

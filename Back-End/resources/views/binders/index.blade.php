@@ -31,10 +31,16 @@
                     @endphp
                     <a href="{{ route('binders.index') }}" class="txtDecorationNone text-dark">
                         <img src="{{ asset('images/' . $imagePath) }}" alt="{{ $binder->name }}" class="binderImage">
-                        <h4 class="text-center pt-3">{{$binder->name}}</h4>
+                        <h3 class="text-center pt-3">{{$binder->name}}</h3>
                     </a>
                 </div>
             @endforeach
+            <a href="{{ route('binders.index') }}" class="txtDecorationNone text-dark">
+                <div class="binderDimensions d-flex align-items-center justify-content-center addBinder">
+                    <span class="addButton">+</span>
+                </div>
+                <h3 class="text-center pt-3">Aggiungi Nuovo Binder</h3>
+            </a>
         </div>
     </div>
 </div>
